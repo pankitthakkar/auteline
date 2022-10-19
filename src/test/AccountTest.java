@@ -11,6 +11,7 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         boolean expected = true;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
@@ -24,6 +25,7 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         boolean expected = false;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
@@ -37,6 +39,7 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         double expected = 1000;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
@@ -50,6 +53,7 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         double expected = 1200;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
@@ -63,10 +67,12 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         double expected = 2200;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
         acc.credit(1000);
+
         double actual = acc.getTotalBalance();
         assertEquals(expected, actual);
     }
@@ -77,10 +83,12 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         double expected = 1000;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
         acc.credit(1000);
+
         double actual = acc.getAvailableBalance();
         assertEquals(expected, actual);
     }
@@ -91,10 +99,12 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         double expected = 950;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
         acc.debit(250);
+
         double actual = acc.getTotalBalance();
         assertEquals(expected, actual);
     }
@@ -105,10 +115,12 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         double expected = 750;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
         acc.debit(250);
+
         double actual = acc.getAvailableBalance();
         assertEquals(expected, actual);
     }
@@ -119,9 +131,11 @@ class AccountTest {
         int pin = 54321;
         double availableBalance = 1000;
         double totalBalance = 1200;
+
         int expected = 12345;
 
         Account acc = new Account(accountNumber, pin, availableBalance, totalBalance);
+
         int actual = acc.getAccountNumber();
         assertEquals(expected, actual);
     }
