@@ -1,4 +1,4 @@
-package test;
+package test.java;
 import main.java.CashDispenser;
 import org.junit.jupiter.api.Test;
 import static org.testng.AssertJUnit.assertEquals;

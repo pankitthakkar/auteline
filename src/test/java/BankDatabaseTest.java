@@ -1,4 +1,4 @@
-package test;
+package test.java;
 import main.java.BankDatabase;
 import org.junit.jupiter.api.Test;
 
