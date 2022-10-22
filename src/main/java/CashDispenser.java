@@ -16,7 +16,7 @@ public class CashDispenser {
   private int count; // number of $20 bills remaining
 
   // no-argument CashDispenser constructor initializes count to default
-  public CashDispenser() {
+  public CashDispenser() {  
     count = INITIAL_COUNT; // set count attribute to default
   }
 
