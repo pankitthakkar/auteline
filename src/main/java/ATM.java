@@ -24,6 +24,7 @@ public class ATM {
     private static final int DEPOSIT = 3;
     private static final int EXIT = 4;
     private static final int FAZEEL = 6;
+    private static final int DHYEY = 7;
 
     // no-argument ATM constructor initializes instance variables
     public ATM() {
@@ -90,6 +91,9 @@ public class ATM {
                     break;
 		case FAZEEL:
                     screen.displayMessageLine("Sushi");
+		    case DHYEY:
+			  screen.displayMessageLine("Pizza");
+			  break;
                 case EXIT: // user chose to terminate session
                     screen.displayMessageLine("\n[~] Exiting the system...");
                     userExited = true; // this ATM session should end
