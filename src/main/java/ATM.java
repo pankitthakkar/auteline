@@ -23,6 +23,7 @@ public class ATM {
     private static final int WITHDRAWAL = 2;
     private static final int DEPOSIT = 3;
     private static final int EXIT = 4;
+    private static final int FAZEEL = 6;
 
     // no-argument ATM constructor initializes instance variables
     public ATM() {
@@ -87,6 +88,8 @@ public class ATM {
                     currentTransaction = createTransaction(mainMenuSelection);
                     currentTransaction.execute(); // execute transaction
                     break;
+		case FAZEEL:
+                    screen.displayMessageLine("Sushi");
                 case EXIT: // user chose to terminate session
                     screen.displayMessageLine("\n[~] Exiting the system...");
                     userExited = true; // this ATM session should end
@@ -105,6 +108,7 @@ public class ATM {
         screen.displayMessageLine("2 - Withdraw cash");
         screen.displayMessageLine("3 - Deposit funds");
         screen.displayMessageLine("4 - Exit\n");
+        screen.displayMessageLine("6 - Fazeel's favorite lunch\n");
         screen.displayMessage("[?] Enter a choice: ");
         return keypad.getInput(); // return user's selection
     }
