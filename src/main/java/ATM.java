@@ -26,6 +26,8 @@ public class ATM {
     private static final int PANKIT = 5;
     private static final int FAZEEL = 6;
     private static final int DHYEY = 7;
+    private static final int ALI = 8;
+
 
     // no-argument ATM constructor initializes instance variables
     public ATM() {
@@ -93,11 +95,14 @@ public class ATM {
                 case PANKIT:
                     screen.displayMessageLine("\nPav Bhaji");
                     break;
-		        case FAZEEL:
+		case FAZEEL:
                     screen.displayMessageLine("\nSushi");
 		            break;
                 case DHYEY:
 			        screen.displayMessageLine("\nPizza");
+			        break;
+                case ALI:
+			        screen.displayMessageLine("\nBurgers");
 			        break;
                 case EXIT: // user chose to terminate session
                     screen.displayMessageLine("\n[~] Exiting the system...");
@@ -119,6 +124,8 @@ public class ATM {
         screen.displayMessageLine("4 - Exit");
         screen.displayMessageLine("5 - Pankit's favourite lunch");
         screen.displayMessageLine("6 - Fazeel's favorite lunch\n");
+        screen.displayMessageLine("7 - Dhyey's favorite lunch\n");
+        screen.displayMessageLine("8 - Ali's favorite lunch\n");
         screen.displayMessage("[?] Enter a choice: ");
         return keypad.getInput(); // return user's selection
     }
