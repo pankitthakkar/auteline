@@ -1,4 +1,4 @@
-package test.java;
+package test;
 
 import main.java.Screen;
 import org.junit.jupiter.api.Test;
