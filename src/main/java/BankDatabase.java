@@ -21,7 +21,7 @@ public class BankDatabase {
   }
 
   // retrieve Account object containing specified account number
-  private Account getAccount(int accountNumber) {
+   Account getAccount(int accountNumber) {
     // loop through accounts searching for matching account number
     for (Account currentAccount : accounts) {
       // return current account if match found
