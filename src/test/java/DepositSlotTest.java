@@ -1,4 +1,4 @@
-package test;
+package java;
 import main.java.DepositSlot;
 import org.junit.jupiter.api.Test;
 import static org.testng.AssertJUnit.assertEquals;

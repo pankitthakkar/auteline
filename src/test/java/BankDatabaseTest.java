@@ -1,6 +1,6 @@
-package test;
+package java;
 import main.java.BankDatabase;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
